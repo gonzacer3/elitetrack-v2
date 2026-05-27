@@ -1,4 +1,4 @@
-# EliteTrack QP v2.0 — Sistema completo RF01-RF04
+# EliteTrack QP v2.0 
 
 **EliteCorp Consulting Group** · IFTS N° 4 · Aseguramiento de Calidad
 
