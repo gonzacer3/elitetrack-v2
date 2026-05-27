@@ -1,0 +1,36 @@
+{
+  "name": "elitetrack-backend",
+  "version": "2.0.0",
+  "description": "EliteTrack QP — Backend completo RF01-RF04",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "test": "jest --coverage --forceExit --coverageThreshold='{\"global\":{\"lines\":90,\"branches\":90}}'",
+    "test:watch": "jest --watch --forceExit"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.1.5",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5-lts.1",
+    "node-cron": "^3.0.3",
+    "nodemailer": "^6.9.8",
+    "sequelize": "^6.35.1",
+    "sqlite3": "^5.1.6"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.2",
+    "supertest": "^6.3.3"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverageFrom": ["src/**/*.js"],
+    "coverageReporters": ["text", "lcov"],
+    "testTimeout": 15000
+  }
+}
